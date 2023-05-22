@@ -1,0 +1,14 @@
+name: "Show issue payload info"
+
+on:
+  issue:
+  issue_comment:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dart-action/dart_action_template@main
+        name: Run action
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
