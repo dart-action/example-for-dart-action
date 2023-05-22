@@ -13,6 +13,6 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Install pub global dependencies'
-        run: 'pub global activate dart_style'
+        run: 'dart pub global activate dart_style'
       - name: 'Which dart_style'
         run: 'which dartfmt && which dartformat'
