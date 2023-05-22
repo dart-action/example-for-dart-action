@@ -1,7 +1,7 @@
 name: "Show issue payload info"
 
 on:
-  issue:
+  issues:
   issue_comment:
 
 jobs:
